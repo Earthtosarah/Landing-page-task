@@ -85,10 +85,11 @@ header .containers .left h1 {
 }
 header .containers .left h4 {
   color: hsl(192, 100%, 9%);
-  font-size: 15.5px;
+  font-size: 17.9px;
   font-family: "Open Sans", sans-serif;
   padding: 0px 15px 15px 0;
   margin-bottom: 10px;
+  font-weight: 500;
 }
 header .containers .left button {
   width: 300px;
@@ -150,8 +151,8 @@ main .boxes #box .images img {
   margin: 10px 10px;
 }
 main .boxes #box .texts h1 {
-  font-size: 25px;
-  font-weight: 900;
+  font-size: 30px;
+  font-weight: 700;
   padding: 5px 5px 5px 0;
   font-family: "Poppins", sans-serif;
   color: hsl(192, 100%, 9%);
@@ -159,8 +160,8 @@ main .boxes #box .texts h1 {
   white-space: nowrap;
 }
 main .boxes .second-box .texts h1 {
-  font-size: 25px;
-  font-weight: 900;
+  font-size: 30px;
+  font-weight: 700;
   padding: 5px 0px 5px 0px;
   font-family: "Poppins", sans-serif;
   color: hsl(192, 100%, 9%);
@@ -173,17 +174,16 @@ main .boxes #box .texts h3 {
   font-family: "Open Sans", sans-serif;
   color: hsl(208, 11%, 55%);
   font-weight: 500;
-  font-size: 14px;
-  text-shadow: 0 0 1px hsl(208, 11%, 55%);
+  font-size: 15px;
+
 }
 main .boxes #box .texts p {
   margin-right: 100px;
   font-family: "Open Sans", sans-serif;
   color: hsl(208, 11%, 55%);
   font-weight: 500;
-  font-size: 14px;
+  font-size: 15px;
   padding: 5px 5px 5px 0;
-  text-shadow: 0 0 1px hsl(208, 11%, 55%);
 }
 aside{
     width: 50%;
@@ -318,6 +318,7 @@ small{
   float: right;
   font-size: 9px;
 }
+
 @media screen and (max-width:375px){
   * {
     margin: 0;

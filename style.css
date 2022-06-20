@@ -277,6 +277,8 @@ footer{
 .lists .icons{
   padding: 10px 5px 5px 5px;
   width: 30%;
+  display: flex;
+ 
 }
 .lists .icons a{
   padding: 4px 10px;
@@ -295,6 +297,7 @@ a{
   text-decoration: none;
   color: #ffffff;
 }
+
 .footer-logo{
   padding: 10px 0;
 }
@@ -431,6 +434,7 @@ small{
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      align-content: center;
       width: 99%;
       height: 500px;
       padding: 10px 0px;
@@ -444,12 +448,16 @@ small{
     }
     main .boxes #box .images {
       width: 100%;
-      padding: 0 10px;
+      padding: 10px 10px;
       position: relative;
+      bottom: 30px;
+      order: 1;
     }
     main .boxes #box .texts {
       width: 100%;
       text-align: center;
+      padding: 15px;
+      order: 2;
     }
     main .boxes #box .images img {
       width: 100%;
@@ -457,33 +465,36 @@ small{
       object-fit: contain;
       position: relative;
       padding: 10px;
-      margin: 10px 10px;
+      margin: 10px 10px 5px 10px;
     }
     main .boxes #box .texts h1 {
       font-size: 24px;
-      font-weight: 900;
+      font-weight: 700;
       padding: 5px 10px 5px 10px;
       font-family: "Poppins", sans-serif;
       color: hsl(192, 100%, 9%);
       margin-right: 0;
+      margin-bottom: 10px;
       white-space: nowrap;
     }
     main .boxes #box .texts p {
       margin-right: 0;
       font-family: "Open Sans", sans-serif;
       color: hsl(208, 11%, 55%);
-      font-weight: light;
-      font-size: 14px;
+      font-weight: lighter;
+      font-size: 16px;
+      line-height: 20px;
       padding: 5px 10px 5px 10px;
-      text-shadow: 0 0 0;
+      text-shadow: 0 0 0 none;
     }
     main .boxes .second-box .texts h1 {
       font-size: 24px;
-      font-weight: 900;
+      font-weight: 700;
       padding: 5px 10px 5px 10px;
       font-family: "Poppins", sans-serif;
       color: hsl(192, 100%, 9%);
       margin-left: 0;
+      margin-bottom: 10px;
       white-space: nowrap;
     }
     main .boxes #box .texts h3 {
@@ -491,9 +502,10 @@ small{
       padding: 5px 10px 5px 10px;
       font-family: "Open Sans", sans-serif;
       color: hsl(208, 11%, 55%);
-      font-weight: light;
-      font-size: 14px;
-      text-shadow: 0 0 0;
+      font-weight: lighter;
+      font-size: 15px;
+      line-height: 20px;
+      text-shadow: 0 0 0 none;
     }
     aside{
       width: 99%;
@@ -538,7 +550,7 @@ aside .aside-content h1{
 }
 footer{
   width: 100vw;
-  height: 120vh;
+  height: 100vh;
   background-color: hsl(192, 100%, 9%);
   padding: 150px 10px 30px 10px;
   font-family: "Open Sans", sans-serif;
@@ -573,4 +585,21 @@ small{
   margin-left: 80px;
   font-size: 9px;
 }
+.lists .list1 .add-text{
+  color: #ffffff;
+  padding: 10px 20px;
+  font-size: 13.5px;
+  font-weight: lighter;
+}
+
+.lists .list2 li{
+  padding: 10px 5px 5px 5px;
+  font-size: 12.5px;
+}
+
+.lists .list3 li{
+  padding: 10px 5px 5px 5px;
+  font-size: 12.5px;
+  font-weight: 100;
 }   
+}

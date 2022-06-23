@@ -61,7 +61,7 @@ header .containers .left {
 header .containers .right {
   width: 55%;
   padding: 50px 0;
-  animation: movedown 2.5s forwards;
+  animation: movedown 2.5s ease-in-out forwards;
 }
 header .containers .right img {
   width: 100%;
@@ -431,6 +431,7 @@ small{
     header .containers .right {
       width: 85%;
       padding: 30px 0;
+      
     }
     main{
       margin:10px;

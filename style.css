@@ -20,7 +20,7 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  animation: introload 5s forwards;
+  animation: introLoad 5s forwards;
 }
 nav {
   position: absolute;
@@ -31,7 +31,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 30px 70px;
-  animation: movein 4.5s ease-in-out forwards;
+  animation: moveIn 4s ease-in-out forwards;
   opacity: 0;
 
 }
@@ -55,13 +55,13 @@ nav .button .nav-btn:hover {
 header .containers .left {
   width: 45%;
   padding-right: 50px;
-  animation: movedown 2.5s ease-in-out forwards;
+  animation: moveDown 2s ease-in-out forwards;
   opacity: 0;
 }
 header .containers .right {
   width: 55%;
   padding: 50px 0;
-  animation: movedown 2.5s ease-in-out forwards;
+  animation: moveDown 2s ease-in-out forwards;
 }
 header .containers .right img {
   width: 100%;
@@ -140,6 +140,7 @@ main .boxes #box {
   border-radius: 20px;
   box-shadow: 3px 3px 10px rgba(77, 77, 77, 0.289),
   -3px -3px 10px rgba(224, 219, 219, 0.334);
+  transition: all 0.1s ease-in; 
 }
 main .boxes #box:hover {
   box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px #f0f0f078,
@@ -245,7 +246,7 @@ aside:hover{
 
 footer{
     width: 100vw;
-    height: 85vh;
+    min-height: 85vh;
     background-color: hsl(192, 100%, 9%);
     padding: 200px 100px;
     font-family: "Open Sans", sans-serif;
@@ -560,7 +561,7 @@ aside .aside-content h1{
 }
 footer{
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   background-color: hsl(192, 100%, 9%);
   padding: 150px 10px 30px 10px;
   font-family: "Open Sans", sans-serif;
@@ -613,7 +614,7 @@ small{
   font-weight: 100;
 }   
 }
-@keyframes movedown {
+@keyframes moveDown {
   from {
     transform: translateY(-100px);
   }
@@ -622,7 +623,7 @@ small{
     opacity: 1;
   }
 }
-@keyframes movein {
+@keyframes moveIn {
   from {
     transform: translateX(-100px);
   }
@@ -635,7 +636,7 @@ small{
     opacity: 1;
   }
 }
-@keyframes introload {
+@keyframes introLoad {
   from {
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   }
@@ -643,7 +644,7 @@ small{
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
 }
-@keyframes introload2 {
+@keyframes introLoad2 {
   from {
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
   }

@@ -68,11 +68,11 @@ header .containers .right img {
   height: 100%;
   object-fit: contain;
   position: relative;
-  bottom: 45px;
+  bottom: 50px;
 }
 header .containers {
   position: relative;
-  top: 100px;
+  top: 120px;
   padding: 70px;
   display: flex;
   flex-direction: row;
@@ -97,6 +97,7 @@ header .containers .left h4 {
   font-size: 17.9px;
   font-family: "Open Sans", sans-serif;
   padding: 0px 15px 15px 0;
+  line-height: 30px;
   margin-bottom: 10px;
   font-weight: 500;
 }
@@ -178,13 +179,14 @@ main .boxes .second-box .texts h1 {
   margin-left: 70px;
   white-space: nowrap;
 }
-main .boxes #box .texts h3 {
+main .boxes #box .texts .p-1 {
   margin-left: 70px;
   padding: 5px 0px 5px 0px;
   font-family: "Open Sans", sans-serif;
   color: hsl(208, 11%, 55%);
   font-weight: 500;
   font-size: 15px;
+  line-height: 30px;
 
 }
 main .boxes #box .texts p {
@@ -194,6 +196,7 @@ main .boxes #box .texts p {
   font-weight: 500;
   font-size: 15px;
   padding: 5px 5px 5px 0;
+  line-height: 30px;
 }
 aside{
     width: 50%;
@@ -312,26 +315,688 @@ a{
   padding: 10px 0;
 }
 .icons a:hover{
-  transform: translateY(-3px)
+  transform: translateY(-3px);
+  color:  hsl(322, 100%, 66%);
+  border: 1px solid hsla(322, 100%, 66%, 0.93);
 }
-.icons a:nth-child(1):hover{
+/* .icons a:nth-child(1):hover{
   color: #4267B2;
   border: 1px solid #4267B2;
 }
 .icons a:nth-child(2):hover{
-  color: #00acee;
-  border: 1px solid #00acee;
+  color:  hsl(322, 100%, 66%);
+  border: 1px solid hsla(322, 100%, 66%, 0.93);
 }
 .icons a:nth-child(3):hover{
   color: #cd486b;
   border: 1px solid #cd486b;
-}
+} */
 small{
   color: #ffffff;
   float: right;
   font-size: 9px;
 }
 
+@media screen and (max-width:1024px) {
+  header{
+    height: 140vh;
+  }
+  aside{
+    height: 300px;
+  }
+}
+@media screen and (max-width:900px){
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  header{
+    width: 100vw;
+    height: 150vh;
+    background-image: url(./images/bg-hero-mobile.svg);
+    background-color: hsl(193, 100%, 96%);
+    object-fit: fill;
+    background-position: center center;
+    background-size: contain;
+    display:block;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+  }
+  nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-content:space-between;
+    padding: 20px;
+  }
+  nav .button .nav-btn {
+    padding: 10px;
+    width: 120px;
+    background-color: white;
+    border: transparent;
+    font-size: 15px;
+    font-weight: bolder;
+    border-radius: 25px;
+    text-transform: capitalize;
+    font-family: "Open Sans", sans-serif;
+    color: hsl(192, 100%, 9%);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+  }
+  nav .logo{
+    width: 120px;
+   
+  }
+  nav .logo img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-size: cover;
+  position: relative;
+  }
+  header .containers {
+    position: relative;
+    top: 100px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  header .containers .left {
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    text-align: center;
+  }
+  header .containers .left h1 {
+    font-size: 35px;
+    color: hsl(192, 100%, 9%);
+    line-height: 35px;
+    padding: 10px 0 0px 0;
+    margin-bottom: 15px;
+    font-weight: bolder;
+    font-family: "Poppins", sans-serif;
+    text-transform: capitalize;
+  }
+  header .containers .left h4 {
+    color: hsl(192, 100%, 9%);
+    font-size: 20px;
+    font-weight: lighter;
+    font-family: "Open Sans", sans-serif;
+    padding: 0px 25px 15px 25px;
+    margin-bottom: 10px;
+  }
+  header .containers .left button {
+    width: 270px;
+    padding: 15px;
+    color: white;
+    margin: 10px;
+    background-color: hsl(322, 100%, 66%);
+    border: transparent;
+    border-radius: 25px;
+    font-weight: light;
+    font-family: "Open Sans", sans-serif;
+    text-transform: capitalize;
+    cursor: pointer;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px hsl(322, 100%, 66%), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    }
+    header .containers .right {
+      width: 95%;
+      padding: 30px 0;
+      
+    }
+    main{
+      margin:10px;
+      align-items: center;
+      justify-content: center;
+    }
+    main .boxes #box {
+      cursor: default;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+      width: 99%;
+      height: 500px;
+      padding: 10px 0px;
+      background-color: white;
+      margin: 20px 10px 20px 7px;
+      position: relative;
+      right: 0;
+      border-radius: 20px;
+      box-shadow: 3px 3px 10px rgba(77, 77, 77, 0.289),
+        -3px -3px 10px rgba(224, 219, 219, 0.334);
+    }
+    main .boxes #box .images {
+      width: 50%;
+      padding: 10px 10px;
+      position: relative;
+      bottom: 30px;
+      order: 0;
+    }
+    main .boxes #box .texts {
+      width: 50%;
+      text-align: left;
+      padding: 15px;
+      order: 0;
+    }
+    main .boxes #box .images img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      position: relative;
+      padding: 10px;
+      margin: 10px 10px 5px 10px;
+    }
+    main .boxes #box .texts h1 {
+      font-size: 30px;
+      font-weight: 700;
+      padding: 5px 5px 5px 0;
+      font-family: "Poppins", sans-serif;
+      color: hsl(192, 100%, 9%);
+      margin-right: 100px;
+      white-space: nowrap;
+      padding-left: 20px;
+    }
+    main .boxes .second-box .texts h1 {
+      font-size: 30px;
+      font-weight: 700;
+      padding: 5px 0px 5px 0px;
+      font-family: "Poppins", sans-serif;
+      color: hsl(192, 100%, 9%);
+      margin-left: 20px;
+      white-space: nowrap;
+    }
+    main .boxes #box .texts .p-1 {
+      margin-left: 20px;
+      padding: 5px 0px 5px 0px;
+      font-family: "Open Sans", sans-serif;
+      color: hsl(208, 11%, 55%);
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 30px;
+      padding-left: 20px;
+    
+    }
+    main .boxes #box .texts p {
+      margin-right: 100px;
+      font-family: "Open Sans", sans-serif;
+      color: hsl(208, 11%, 55%);
+      font-weight: 500;
+      font-size: 15px;
+      padding: 5px 5px 5px 0;
+      line-height: 30px;
+      padding-left: 20px;
+    }
+    /* main .boxes #box .texts .p-1 {
+      margin-left: 0;
+      padding: 5px 10px 5px 10px;
+      font-family: "Open Sans", sans-serif;
+      color: hsl(208, 11%, 55%);
+      font-weight: lighter;
+      font-size: 15px;
+      line-height: 20px;
+      text-shadow: 0 0 0 none;
+    } */
+    aside{
+      width: 80%;
+      height: 140px;
+      display: block;
+      text-align: center;
+      align-items: center;
+      margin: auto;
+      position: relative;
+      top: 80px;
+      justify-content: center;
+      background-color: white;
+      border-radius: 20px;
+      box-shadow: 3px 3px 10px rgba(77, 77, 77, 0.289), -3px -3px 10px rgba(224, 219, 219, 0.334);
+  }
+  aside .aside-content{
+    position: relative;
+    top: 5%;
+    bottom: 1%;
+    padding: 5px;
+}
+aside .aside-content h1{
+  color: hsl(192, 100%, 9%);
+  font-family: "Poppins", sans-serif;
+  font-size: 19px;
+  padding: 15px 0;
+  white-space: nowrap;}
+  aside .aside-content button{
+    padding: 15px;
+    width: 70%;
+    background-color: hsl(322, 100%, 66%);
+    border:transparent;
+    border-radius: 35px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+    text-transform: capitalize;
+    cursor: pointer;
+    color: white;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px hsl(322, 100%, 66%),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+footer{
+  width: 100vw;
+  min-height: 100vh;
+  background-color: hsl(192, 100%, 9%);
+  padding: 150px 10px 30px 30px;
+  font-family: "Open Sans", sans-serif;
+}
+.lists{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.lists .list1{
+  width: 50%;
+  display: flex;
+  margin-bottom: 20px;
+}
+.lists .list2{
+  width: 100%; 
+  margin-left: 0;
+}
+.lists .list3{
+  width: 100%;
+  margin-bottom: 20px;
+}
+.lists .icons{
+  padding: 10px 5px 5px 5px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+small{
+  color: #ffffff;
+  float: right;
+  margin-left: 80px;
+  font-size: 9px;
+}
+.lists .list1 .add-text{
+  color: #ffffff;
+  padding: 10px 20px;
+  font-size: 13.5px;
+  font-weight: lighter;
+}
+
+.lists .list2 li{
+  padding: 10px 5px 5px 5px;
+  font-size: 12.5px;
+}
+
+.lists .list3 li{
+  padding: 10px 5px 5px 5px;
+  font-size: 12.5px;
+  font-weight: 100;
+}   
+}
+@keyframes moveDown {
+  from {
+    transform: translateY(-100px);
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes moveIn {
+  from {
+    transform: translateX(-100px);
+  }
+  to {
+    transform: translateX(-50px);
+    opacity: 0.5;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes introLoad {
+  from {
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  to {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+@keyframes introLoad2 {
+  from {
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  }
+  to {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+@media screen and (max-width:425px){
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  header{
+    width: 100vw;
+    height: 120vh;
+    background-image: url(./images/bg-hero-mobile.svg);
+    background-color: hsl(193, 100%, 96%);
+    object-fit: fill;
+    background-position: center center;
+    background-size: contain;
+    display:block;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+  }
+  nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-content:space-between;
+    padding: 20px;
+  }
+  nav .button .nav-btn {
+    padding: 5px;
+    width: 120px;
+    background-color: white;
+    border: transparent;
+    font-size: 15px;
+    font-weight: bolder;
+    border-radius: 25px;
+    text-transform: capitalize;
+    font-family: "Open Sans", sans-serif;
+    color: hsl(192, 100%, 9%);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+  }
+  nav .logo{
+    width: 120px;
+   
+  }
+  nav .logo img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  position: relative;
+  }
+  header .containers {
+    position: relative;
+    top: 100px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  header .containers .left {
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    text-align: center;
+  }
+  header .containers .left h1 {
+    font-size: 27px;
+    color: hsl(192, 100%, 9%);
+    line-height: 35px;
+    padding: 10px 0 0px 0;
+    margin-bottom: 15px;
+    font-weight: bolder;
+    font-family: "Poppins", sans-serif;
+    text-transform: capitalize;
+  }
+  header .containers .left h4 {
+    color: hsl(192, 100%, 9%);
+    font-size: 17px;
+    font-weight: lighter;
+    font-family: "Open Sans", sans-serif;
+    padding: 0px 15px 15px 0;
+    margin-bottom: 10px;
+  }
+  header .containers .left button {
+    width: 270px;
+    padding: 15px;
+    color: white;
+    margin: 10px;
+    background-color: hsl(322, 100%, 66%);
+    border: transparent;
+    border-radius: 25px;
+    font-weight: light;
+    font-family: "Open Sans", sans-serif;
+    text-transform: capitalize;
+    cursor: pointer;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px hsl(322, 100%, 66%), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    }
+    header .containers .right {
+      width: 85%;
+      padding: 30px 0;
+      
+    }
+    main{
+      margin:10px;
+      align-items: center;
+      justify-content: center;
+    }
+    main .boxes #box {
+      cursor: default;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+      width: 99%;
+      height: 500px;
+      padding: 10px 0px;
+      background-color: white;
+      margin: 20px 10px 20px 7px;
+      position: relative;
+      right: 0;
+      border-radius: 20px;
+      box-shadow: 3px 3px 10px rgba(77, 77, 77, 0.289),
+        -3px -3px 10px rgba(224, 219, 219, 0.334);
+    }
+    main .boxes #box .images {
+      width: 100%;
+      padding: 10px 10px;
+      position: relative;
+      bottom: 30px;
+      order: 1;
+    }
+    main .boxes #box .texts {
+      width: 100%;
+      text-align: center;
+      padding: 15px;
+      order: 2;
+    }
+    main .boxes #box .images img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      position: relative;
+      padding: 10px;
+      margin: 10px 10px 5px 10px;
+    }
+    main .boxes #box .texts h1 {
+      font-size: 24px;
+      font-weight: 700;
+      padding: 5px 10px 5px 10px;
+      font-family: "Poppins", sans-serif;
+      color: hsl(192, 100%, 9%);
+      margin-right: 0;
+      margin-bottom: 10px;
+      white-space: nowrap;
+    }
+    main .boxes #box .texts p {
+      margin-right: 0;
+      font-family: "Open Sans", sans-serif;
+      color: hsl(208, 11%, 55%);
+      font-weight: lighter;
+      font-size: 16px;
+      line-height: 20px;
+      padding: 5px 10px 5px 10px;
+      text-shadow: 0 0 0 none;
+    }
+    main .boxes .second-box .texts h1 {
+      font-size: 24px;
+      font-weight: 700;
+      padding: 5px 10px 5px 10px;
+      font-family: "Poppins", sans-serif;
+      color: hsl(192, 100%, 9%);
+      margin-left: 0;
+      margin-bottom: 10px;
+      white-space: nowrap;
+    }
+    main .boxes #box .texts .p-1 {
+      margin-left: 0;
+      padding: 5px 10px 5px 10px;
+      font-family: "Open Sans", sans-serif;
+      color: hsl(208, 11%, 55%);
+      font-weight: lighter;
+      font-size: 15px;
+      line-height: 20px;
+      text-shadow: 0 0 0 none;
+    }
+    aside{
+      width: 99%;
+      height: 140px;
+      display: block;
+      text-align: center;
+      align-items: center;
+      margin: auto;
+      position: relative;
+      top: 80px;
+      justify-content: center;
+      background-color: white;
+      border-radius: 20px;
+      box-shadow: 3px 3px 10px rgba(77, 77, 77, 0.289), -3px -3px 10px rgba(224, 219, 219, 0.334);
+  }
+  aside .aside-content{
+    position: relative;
+    top: 5%;
+    bottom: 1%;
+    padding: 5px;
+}
+aside .aside-content h1{
+  color: hsl(192, 100%, 9%);
+  font-family: "Poppins", sans-serif;
+  font-size: 19px;
+  padding: 15px 0;
+  white-space: nowrap;}
+  aside .aside-content button{
+    padding: 15px;
+    width: 70%;
+    background-color: hsl(322, 100%, 66%);
+    border:transparent;
+    border-radius: 35px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+    text-transform: capitalize;
+    cursor: pointer;
+    color: white;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px hsl(322, 100%, 66%),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+footer{
+  width: 100vw;
+  min-height: 100vh;
+  background-color: hsl(192, 100%, 9%);
+  padding: 150px 10px 30px 10px;
+  font-family: "Open Sans", sans-serif;
+}
+.lists{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.lists .list1{
+  width: 100%;
+  display: flex;
+  margin-bottom: 20px;
+}
+.lists .list2{
+  width: 100%; 
+  margin-left: 0;
+}
+.lists .list3{
+  width: 100%;
+  margin-bottom: 20px;
+}
+.lists .icons{
+  padding: 10px 5px 5px 5px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+small{
+  color: #ffffff;
+  float: none;
+  margin-left: 80px;
+  font-size: 9px;
+}
+.lists .list1 .add-text{
+  color: #ffffff;
+  padding: 10px 20px;
+  font-size: 13.5px;
+  font-weight: lighter;
+}
+
+.lists .list2 li{
+  padding: 10px 5px 5px 5px;
+  font-size: 12.5px;
+}
+
+.lists .list3 li{
+  padding: 10px 5px 5px 5px;
+  font-size: 12.5px;
+  font-weight: 100;
+}   
+}
+@keyframes moveDown {
+  from {
+    transform: translateY(-100px);
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes moveIn {
+  from {
+    transform: translateX(-100px);
+  }
+  to {
+    transform: translateX(-50px);
+    opacity: 0.5;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes introLoad {
+  from {
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  to {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+@keyframes introLoad2 {
+  from {
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  }
+  to {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
 @media screen and (max-width:375px){
   * {
     margin: 0;
@@ -508,7 +1173,7 @@ small{
       margin-bottom: 10px;
       white-space: nowrap;
     }
-    main .boxes #box .texts h3 {
+    main .boxes #box .texts .p-1 {
       margin-left: 0;
       padding: 5px 10px 5px 10px;
       font-family: "Open Sans", sans-serif;
@@ -544,6 +1209,326 @@ aside .aside-content h1{
   font-size: 19px;
   padding: 15px 0;
   white-space: nowrap;}
+  aside .aside-content button{
+    padding: 15px;
+    width: 70%;
+    background-color: hsl(322, 100%, 66%);
+    border:transparent;
+    border-radius: 35px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+    text-transform: capitalize;
+    cursor: pointer;
+    color: white;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px hsl(322, 100%, 66%),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+footer{
+  width: 100vw;
+  min-height: 100vh;
+  background-color: hsl(192, 100%, 9%);
+  padding: 150px 10px 30px 10px;
+  font-family: "Open Sans", sans-serif;
+}
+.lists{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.lists .list1{
+  width: 100%;
+  display: flex;
+  margin-bottom: 20px;
+}
+.lists .list2{
+  width: 100%; 
+  margin-left: 0;
+}
+.lists .list3{
+  width: 100%;
+  margin-bottom: 20px;
+}
+.lists .icons{
+  padding: 10px 5px 5px 5px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+small{
+  color: #ffffff;
+  float: none;
+  margin-left: 80px;
+  font-size: 9px;
+}
+.lists .list1 .add-text{
+  color: #ffffff;
+  padding: 10px 20px;
+  font-size: 13.5px;
+  font-weight: lighter;
+}
+
+.lists .list2 li{
+  padding: 10px 5px 5px 5px;
+  font-size: 12.5px;
+}
+
+.lists .list3 li{
+  padding: 10px 5px 5px 5px;
+  font-size: 12.5px;
+  font-weight: 100;
+}   
+}
+@keyframes moveDown {
+  from {
+    transform: translateY(-100px);
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes moveIn {
+  from {
+    transform: translateX(-100px);
+  }
+  to {
+    transform: translateX(-50px);
+    opacity: 0.5;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes introLoad {
+  from {
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  to {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+@keyframes introLoad2 {
+  from {
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  }
+  to {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+@media screen and (max-width:320px){
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  header{
+    width: 100vw;
+    height: 120vh;
+    background-image: url(./images/bg-hero-mobile.svg);
+    background-color: hsl(193, 100%, 96%);
+    object-fit: fill;
+    background-position: center center;
+    background-size: cover;
+    display:block;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+  }
+  nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-content:space-between;
+    padding: 20px;
+  }
+  nav .button .nav-btn {
+    padding: 5px;
+    width: 120px;
+    background-color: white;
+    border: transparent;
+    font-size: 15px;
+    font-weight: bolder;
+    border-radius: 25px;
+    text-transform: capitalize;
+    font-family: "Open Sans", sans-serif;
+    color: hsl(192, 100%, 9%);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+  }
+  nav .logo{
+    width: 120px;
+   
+  }
+  nav .logo img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  position: relative;
+  }
+  header .containers {
+    position: relative;
+    top: 100px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  header .containers .left {
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    text-align: center;
+  }
+  header .containers .left h1 {
+    font-size: 27px;
+    color: hsl(192, 100%, 9%);
+    line-height: 35px;
+    padding: 10px 0 0px 0;
+    margin-bottom: 15px;
+    font-weight: bolder;
+    font-family: "Poppins", sans-serif;
+    text-transform: capitalize;
+  }
+  header .containers .left h4 {
+    color: hsl(192, 100%, 9%);
+    font-size: 17px;
+    font-weight: lighter;
+    font-family: "Open Sans", sans-serif;
+    padding: 0px 15px 15px 0;
+    margin-bottom: 10px;
+  }
+  header .containers .left button {
+    width: 270px;
+    padding: 15px;
+    color: white;
+    margin: 10px;
+    background-color: hsl(322, 100%, 66%);
+    border: transparent;
+    border-radius: 25px;
+    font-weight: light;
+    font-family: "Open Sans", sans-serif;
+    text-transform: capitalize;
+    cursor: pointer;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px hsl(322, 100%, 66%), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    }
+    header .containers .right {
+      width: 85%;
+      padding: 30px 0;
+      
+    }
+    main{
+      margin:10px;
+      align-items: center;
+      justify-content: center;
+    }
+    main .boxes #box {
+      cursor: default;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+      width: 99%;
+      height: 500px;
+      padding: 10px 0px;
+      background-color: white;
+      margin: 20px 10px 20px 7px;
+      position: relative;
+      right: 0;
+      border-radius: 20px;
+      box-shadow: 3px 3px 10px rgba(77, 77, 77, 0.289),
+        -3px -3px 10px rgba(224, 219, 219, 0.334);
+    }
+    main .boxes #box .images {
+      width: 100%;
+      padding: 10px 10px;
+      position: relative;
+      bottom: 30px;
+      order: 1;
+    }
+    main .boxes #box .texts {
+      width: 100%;
+      text-align: center;
+      padding: 15px;
+      order: 2;
+    }
+    main .boxes #box .images img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      position: relative;
+      padding: 10px;
+      margin: 10px 10px 5px 10px;
+    }
+    main .boxes #box .texts h1 {
+      font-size: 24px;
+      font-weight: 700;
+      padding: 5px 10px 5px 10px;
+      font-family: "Poppins", sans-serif;
+      color: hsl(192, 100%, 9%);
+      margin-right: 0;
+      margin-bottom: 10px;
+      white-space: normal;
+    }
+    main .boxes #box .texts p {
+      margin-right: 0;
+      font-family: "Open Sans", sans-serif;
+      color: hsl(208, 11%, 55%);
+      font-weight: lighter;
+      font-size: 16px;
+      line-height: 20px;
+      padding: 5px 10px 5px 10px;
+      text-shadow: 0 0 0 none;
+    }
+    main .boxes .second-box .texts h1 {
+      font-size: 20px;
+      font-weight: 700;
+      padding: 5px 10px 10px 10px;
+      font-family: "Poppins", sans-serif;
+      color: hsl(192, 100%, 9%);
+      margin-right: 0;
+      margin-bottom: 10px;
+      white-space: normal;
+    }
+    main .boxes #box .texts .p-1 {
+      margin-left: 0;
+      padding: 5px 10px 5px 10px;
+      font-family: "Open Sans", sans-serif;
+      color: hsl(208, 11%, 55%);
+      font-weight: lighter;
+      font-size: 15px;
+      line-height: 20px;
+      text-shadow: 0 0 0 none;
+    }
+    aside{
+      width: 99%;
+      height: 160px;
+      display: block;
+      text-align: center;
+      align-items: center;
+      margin: auto;
+      position: relative;
+      top: 80px;
+      justify-content: center;
+      background-color: white;
+      border-radius: 20px;
+      box-shadow: 3px 3px 10px rgba(77, 77, 77, 0.289), -3px -3px 10px rgba(224, 219, 219, 0.334);
+  }
+  aside .aside-content{
+    position: relative;
+    top: 5%;
+    bottom: 1%;
+    padding: 5px;
+}
+aside .aside-content h1{
+  color: hsl(192, 100%, 9%);
+  font-family: "Poppins", sans-serif;
+  font-size: 19px;
+  padding: 15px 0;
+  white-space: normal;}
   aside .aside-content button{
     padding: 15px;
     width: 70%;

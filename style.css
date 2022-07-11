@@ -1005,7 +1005,7 @@ small{
   }
   header{
     width: 100vw;
-    height: 100vh;
+    height: 125vh;
     background-image: url(./images/bg-hero-mobile.svg);
     background-color: hsl(193, 100%, 96%);
     object-fit: fill;
@@ -1325,7 +1325,7 @@ small{
   }
   header{
     width: 100vw;
-    height: 120vh;
+    height: 130vh;
     background-image: url(./images/bg-hero-mobile.svg);
     background-color: hsl(193, 100%, 96%);
     object-fit: fill;
@@ -1401,7 +1401,7 @@ small{
     margin-bottom: 10px;
   }
   header .containers .left button {
-    width: 270px;
+    width: 220px;
     padding: 15px;
     color: white;
     margin: 10px;
